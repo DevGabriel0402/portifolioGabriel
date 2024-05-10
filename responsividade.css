@@ -38,6 +38,10 @@
     margin-top: 20px;
   }
 
+  div.info {
+    width: 100% !important;
+  }
+
   .container-image {
     width: 100% !important;
   }
