@@ -11,56 +11,50 @@ const buttonHref = document.getElementById("button-download");
 // Carregamento da Pagina
 
 window.addEventListener("load", () => {
-  if (window.innerWidth < 765) {
-    buttonHref.addEventListener("click", () => {
-      const pdfUrl = this.getAttribute("href");
+  document.getElementById("image-skills").classList.add("hidden");
 
-      setTimeout(() => {
-        const link = document.createElement("a");
-        link.download = pdfUrl;
-        link.click();
-      }, 4000);
-    });
-  } else {
-    buttonHref.addEventListener("click", () => {
-      setTimeout(() => {
-        window.open("./assets/Curriculo - Gabriel Lucas.pdf", "_blank");
-      }, 4000);
-    });
-  }
-});
+  function adicionarEventosMouse(imagemId, botaoId, textId, backgroundId) {
+    const imagem = document.getElementById(imagemId);
+    const botao = document.getElementById(botaoId);
+    const textImg = document.getElementById(textId);
+    const background = document.getElementById(backgroundId);
 
-document.getElementById("image-skills").classList.add("hidden");
+    if (window.innerWidth >= 765) {
+      imagem.addEventListener("mouseenter", () => {
+        botao.classList.add("flex");
+        botao.style.animation = "toUp 0.3s forwards";
+        textImg.style.animation = "opacityIn 0.3s forwards";
+        background.style.animation = "opacityIn 0.3s forwards";
+      });
 
-function adicionarEventosMouse(imagemId, botaoId, textId, backgroundId) {
-  const imagem = document.getElementById(imagemId);
-  const botao = document.getElementById(botaoId);
-  const textImg = document.getElementById(textId);
-  const background = document.getElementById(backgroundId);
+      imagem.addEventListener("mouseleave", () => {
+        botao.style.animation = "toUpReverse 0.3s forwards";
+        textImg.style.animation = "opacityOut 0.8s forwards";
+        background.style.animation = "opacityOut 0.8s forwards";
 
-  if (window.innerWidth >= 765) {
-    imagem.addEventListener("mouseenter", () => {
+        setTimeout(() => {
+          botao.classList.remove("flex");
+        }, 100);
+      });
+    } else {
       botao.classList.add("flex");
-      botao.style.animation = "toUp 0.3s forwards";
-      textImg.style.animation = "opacityIn 0.3s forwards";
-      background.style.animation = "opacityIn 0.3s forwards";
-    });
-
-    imagem.addEventListener("mouseleave", () => {
-      botao.style.animation = "toUpReverse 0.3s forwards";
-      textImg.style.animation = "opacityOut 0.8s forwards";
-      background.style.animation = "opacityOut 0.8s forwards";
-
-      setTimeout(() => {
-        botao.classList.remove("flex");
-      }, 100);
-    });
-  } else {
-    botao.classList.add("flex");
-    textImg.style.opacity = "1";
-    background.style.opacity = "0.8";
+      textImg.style.opacity = "1";
+      background.style.opacity = "0.8";
+    }
   }
-}
+
+  adicionarEventosMouse("img-1", "button-1", "title-img-1", "background-gradient-1");
+
+  adicionarEventosMouse("img-2", "button-2", "title-img-2", "background-gradient-2");
+
+  adicionarEventosMouse("img-3", "button-3", "title-img-3", "background-gradient-3");
+
+  adicionarEventosMouse("img-4", "button-4", "title-img-4", "background-gradient-4");
+
+  adicionarEventosMouse("img-5", "button-5", "title-img-5", "background-gradient-5");
+
+  adicionarEventosMouse("img-6", "button-6", "title-img-6", "background-gradient-6");
+});
 
 // Botão Dark
 
@@ -148,18 +142,6 @@ document.getElementById("youtube-link").addEventListener("click", () => {
   }, 3000);
 });
 
-adicionarEventosMouse("img-1", "button-1", "title-img-1", "background-gradient-1");
-
-adicionarEventosMouse("img-2", "button-2", "title-img-2", "background-gradient-2");
-
-adicionarEventosMouse("img-3", "button-3", "title-img-3", "background-gradient-3");
-
-adicionarEventosMouse("img-4", "button-4", "title-img-4", "background-gradient-4");
-
-adicionarEventosMouse("img-5", "button-5", "title-img-5", "background-gradient-5");
-
-adicionarEventosMouse("img-6", "button-6", "title-img-6", "background-gradient-6");
-
 document.getElementById("button-download").addEventListener("click", () => {
   document.getElementById("btn-download-icon").classList.add("hidden");
   document.getElementById("button-download").style.border = "1px solid #f7d039";
@@ -175,5 +157,14 @@ document.getElementById("button-download").addEventListener("click", () => {
     document.getElementById("button-download").style.backgroundColor = "#f7d039";
     document.getElementById("btn-download-icon").classList.add("hidden");
     document.getElementById("btn-download-icon").classList.remove("hidden");
+
+    if (window.innerWidth > 765) {
+      window.open("./assets/Curriculo - Gabriel Lucas.pdf", "_blank");
+    } else {
+      const link = document.createElement("a");
+      link.href = "./assets/Curriculo - Gabriel Lucas.pdf";
+      link.download = link.href;
+      link.click();
+    }
   }, 4000);
 });
