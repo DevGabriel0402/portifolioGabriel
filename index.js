@@ -13,12 +13,11 @@ const buttonHref = document.getElementById("button-download");
 window.addEventListener("load", () => {
   if (window.innerWidth < 765) {
     buttonHref.addEventListener("click", () => {
-      setTimeout(() => {
-        const linkDownload = buttonHref.href;
+      const pdfUrl = this.getAttribute("href");
 
-        let link = document.createElement("a");
-        link.href = linkDownload;
-        link.download = "./assets/Curriculo - Gabriel Lucas.pdf";
+      setTimeout(() => {
+        const link = document.createElement("a");
+        link.download = pdfUrl;
         link.click();
       }, 4000);
     });
