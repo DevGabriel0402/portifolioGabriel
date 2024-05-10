@@ -11,6 +11,28 @@ const progressBars = document.querySelectorAll(".progress-bar");
 
 this.window.addEventListener("laod", () => {
   document.getElementById("image-skills").classList.add("hidden");
+  if (window.innerWidth >= 765) {
+    imagem.addEventListener("mouseenter", () => {
+      botao.classList.add("flex");
+      botao.style.animation = "toUp 0.3s forwards";
+      textImg.style.animation = "opacityIn 0.3s forwards";
+      background.style.animation = "opacityIn 0.3s forwards";
+    });
+
+    imagem.addEventListener("mouseleave", () => {
+      botao.style.animation = "toUpReverse 0.3s forwards";
+      textImg.style.animation = "opacityOut 0.8s forwards";
+      background.style.animation = "opacityOut 0.8s forwards";
+
+      setTimeout(() => {
+        botao.classList.remove("flex");
+      }, 100);
+    });
+  } else {
+    botao.classList.add("flex");
+    textImg.style.opacity = "1";
+    background.style.opacity = "0.8";
+  }
 });
 
 // Botão Dark
@@ -106,22 +128,28 @@ function adicionarEventosMouse(imagemId, botaoId, textId, backgroundId) {
   const textImg = document.getElementById(textId);
   const background = document.getElementById(backgroundId);
 
-  imagem.addEventListener("mouseenter", () => {
+  if (window.innerWidth >= 765) {
+    imagem.addEventListener("mouseenter", () => {
+      botao.classList.add("flex");
+      botao.style.animation = "toUp 0.3s forwards";
+      textImg.style.animation = "opacityIn 0.3s forwards";
+      background.style.animation = "opacityIn 0.3s forwards";
+    });
+
+    imagem.addEventListener("mouseleave", () => {
+      botao.style.animation = "toUpReverse 0.3s forwards";
+      textImg.style.animation = "opacityOut 0.8s forwards";
+      background.style.animation = "opacityOut 0.8s forwards";
+
+      setTimeout(() => {
+        botao.classList.remove("flex");
+      }, 100);
+    });
+  } else {
     botao.classList.add("flex");
-    botao.style.animation = "toUp 0.3s forwards";
-    textImg.style.animation = "opacityIn 0.3s forwards";
-    background.style.animation = "opacityIn 0.3s forwards";
-  });
-
-  imagem.addEventListener("mouseleave", () => {
-    botao.style.animation = "toUpReverse 0.3s forwards";
-    textImg.style.animation = "opacityOut 0.8s forwards";
-    background.style.animation = "opacityOut 0.8s forwards";
-
-    setTimeout(() => {
-      botao.classList.remove("flex");
-    }, 100);
-  });
+    textImg.style.opacity = "1";
+    background.style.opacity = "0.8";
+  }
 }
 
 adicionarEventosMouse("img-1", "button-1", "title-img-1", "background-gradient-1");
