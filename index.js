@@ -75,7 +75,7 @@ btnDark.addEventListener("click", () => {
   document.getElementById("number-description-2").style.color = "#3d3d3d";
   document.getElementById("number-description-3").style.color = "#3d3d3d";
 
-  document.getElementById("footer").style.color = "#3d3d3d";
+  document.getElementById("footer").style.color = "#3d3d3dgir ";
 });
 
 // Botão Light
