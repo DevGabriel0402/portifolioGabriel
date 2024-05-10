@@ -74,6 +74,8 @@ btnDark.addEventListener("click", () => {
   document.getElementById("number-description-1").style.color = "#3d3d3d";
   document.getElementById("number-description-2").style.color = "#3d3d3d";
   document.getElementById("number-description-3").style.color = "#3d3d3d";
+
+  document.getElementById("footer").style.color = "#3d3d3d";
 });
 
 // Botão Light
@@ -93,6 +95,8 @@ btnLight.addEventListener("click", () => {
   document.getElementById("number-description-1").style.color = "#e5e5e5";
   document.getElementById("number-description-2").style.color = "#e5e5e5";
   document.getElementById("number-description-3").style.color = "#e5e5e5";
+
+  document.getElementById("footer").style.color = "#e5e5e5";
 });
 
 // Botão de Portifolio
