@@ -1,0 +1,142 @@
+@keyframes toRight {
+  to {
+    transform: translatex(calc(340px + 40px));
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    transform: translatex(50px);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
+
+@keyframes download {
+  0% {
+    background-color: #f7d039;
+    width: 0;
+  }
+  100% {
+    background-color: #f7d039;
+    width: 290px;
+  }
+}
+
+@keyframes carregamento {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: data-width(value);
+  }
+}
+
+@keyframes toUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toUpReverse {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+}
+
+@keyframes toUpIn {
+  0% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toDown {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+}
+
+@keyframes toBlack {
+  from {
+    background-color: #e5e5e5;
+  }
+  to {
+    background-color: #0c151d;
+  }
+}
+
+@keyframes toWhite {
+  from {
+    background-color: #0c151d;
+  }
+  to {
+    background-color: #e5e5e5;
+  }
+}
+
+@keyframes opacityIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes opacityOut {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.toUp-1 {
+  animation: toUp 0.3s forwards;
+}
+.toUp-2 {
+  animation: toUp 0.5s forwards;
+}
+.toUp-3 {
+  animation: toUp 0.7s forwards;
+}
+.toUp-4 {
+  animation: toUp 0.9s forwards;
+}
+
+.toUp-5 {
+  animation: toUp 1.2s forwards;
+}
+
+.toUp-6 {
+  animation: toUp 1.4s forwards;
+}
+
+.toBlack {
+  animation: toBlack 0.5s forwards;
+}
+.toWhite {
+  animation: toWhite 0.5s forwards;
+}

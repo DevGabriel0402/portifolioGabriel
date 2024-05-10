@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="
+    This is my dev portfolio where you will find my main networks, projects and skills">
+    <link rel="shortcut icon" href="./assets/profile.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/profile.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet" href="animate.css">
+    <script src="index.js" defer></script>
+    <title>Portifólio - Gabriel Lucas</title>
+</head>
+
+<body id="body">
+    <div id="soap-youtube" class="soap hidden">
+        <p>Youtube está sendo criado!</p>
+    </div>
+    <div class="container">
+        <!-- DARK/LIGHT BUTTON -->
+        <div class="light-dark ">
+            <div class="btn-light" id="btn-light"><img src="./assets/lua-icon.svg" alt="light-icon"></div>
+            <div class="btn-dark hidden" id="btn-dark"><img src="./assets/sun-icon.svg" alt="dark-icon"></div>
+            <div></div>
+        </div>
+        <!-- HEADER COMPONENT -->
+        <section class="header ">
+            <div class="profile-img toUp-1">
+                <img src="./assets/profile.jpg" alt="profile image">
+            </div>
+            <div class="header-info toUp-2">
+                <h1 class="title title-header" id="title-header">Gabriel Lucas</h1>
+                <p class="profession" id="profession">Desenvolvedor FrontEnd</p>
+                <div class="social-media">
+                    <img id="git-link" src="./assets/git-icon.svg" alt="git-icon">
+                    <img id="x-link" src="./assets/x-icon.svg" alt="x-icon">
+                    <img id="linkedin-link" src="./assets/linkedin-icon.svg" alt="linkedin-icon">
+                    <img id="youtube-link" src="./assets/youtube-icon.svg" alt="youtube-icon">
+                </div>
+            </div>
+        </section>
+        <section class="pessoal-info">
+            <div class="container-info">
+                <div class="info toUp-3" id="info">
+                    <p class="number-description" id="number-description-1">2</p>
+                    <p class="pessoal-description" id="pessoal-description-1">Anos de experiências</p>
+                </div>
+                <div class="info toUp-4" id="info">
+                    <p class="number-description" id="number-description-2">15+</p>
+                    <p class="pessoal-description" id="pessoal-description-2">Projetos completos</p>
+                </div>
+                <div class="info toUp-5" id="info">
+                    <p class="number-description" id="number-description-3">3+</p>
+                    <p class="pessoal-description " id="pessoal-description-3">Clientes satisfeitos</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a class="button btn-download toUp-4" id="button-download">
+                    <div class=" bar-download hidden" id="bar-download"></div>
+                    <span class="texto"><span id="btn-download-icon" class="">Download CV</span></span>
+                    <img id="icon-download" src="./assets/donwload-icon.svg" alt="download-icon">
+                </a>
+                <a class="button btn-contact-me toUp-5" href=" https://w.app/devgabriel" target="_blank">Entrar em
+                    contato</a>
+            </div>
+        </section>
+        <!-- PROJECTS -->
+        <section class="projects toUp-4">
+            <div class="buttons-project" id="buttons-project">
+                <p class="btn-portifolio active-btn toUp-5" id="btn-portifolio">Portifólio</p>
+                <p class="btn-skills  toUp-6" id="btn-skills">Skills</p>
+            </div>
+            <div class="img-projects" id="image-project">
+                <!-- BURGER -->
+                <div id="img-1" class="container-image toUp-1">
+                    <h1 class="title-img " id="title-img-1">Cardápio Digital</h1>
+                    <div id="background-gradient-1" class="background-gradient"></div>
+                    <img src="./assets/img-projects/burger.png" alt="project-burger">
+                    <div id="button-1" class="button-image">
+                        <a href="https://menudigitalio.netlify.app" target="_blank">Ver</a>
+                        <a href="https://github.com/DevGabriel0402/cardapio-digital.io" target="_blank">Github</a>
+                    </div>
+                </div>
+                <!-- LOGIN -->
+                <div id="img-2" class="container-image toUp-2">
+                    <h1 class="title-img " id="title-img-2">Login</h1>
+                    <div id="background-gradient-2" class="background-gradient"></div>
+                    <img class="" src="./assets/img-projects/login.png" alt="login-project">
+                    <div id="button-2" class="button-image">
+                        <a href="https://loginpage-io.netlify.app" target="_blank">Ver</a>
+                        <a href="https://github.com/DevGabriel0402/Tela-de-Login" target="_blank">Github</a>
+                    </div>
+                </div>
+                <!-- PRESET -->
+                <div id="img-3" class="container-image toUp-3">
+                    <h1 class="title-img " id="title-img-3">Preset</h1>
+                    <div id="background-gradient-3" class="background-gradient"></div>
+                    <img class="" src="./assets/img-projects/preset.png" alt="Preset-project">
+                    <div id="button-3" class="button-image">
+                        <a href="https://preset-io.netlify.app" target="_blank">Ver</a>
+                        <a href="https://github.com/DevGabriel0402/presets-io" target="_blank">Github</a>
+                    </div>
+                </div>
+                <!-- Convencily -->
+                <div id="img-4" class="container-image toUp-4">
+                    <h1 class="title-img " id="title-img-4">Convencily</h1>
+                    <div id="background-gradient-4" class="background-gradient"></div>
+                    <img class="" src="./assets/img-projects/convencily.png" alt="convencily-project">
+                    <div id="button-4" class="button-image">
+                        <a href="https://convencily-test-frontend.netlify.app/" target="_blank">Ver</a>
+                        <a href="https://github.com/DevGabriel0402/convencily-teste-frontend" target="_blank">Github</a>
+                    </div>
+                </div>
+                <!-- BIO LINK -->
+                <div id="img-5" class="container-image toUp-5">
+                    <h1 class="title-img " id="title-img-5">Bio Link</h1>
+                    <div id="background-gradient-5" class="background-gradient"></div>
+                    <img class="" src="./assets/img-projects/bio-link.png" alt="Bio-link-project">
+                    <div id="button-5" class="button-image">
+                        <a href="https://linksaqui.netlify.app" target="_blank">Ver</a>
+                        <a href="https://github.com/DevGabriel0402/linksUteis" target="_blank">Github</a>
+                    </div>
+                </div>
+                <!-- PREVISÃO DO TEMPO -->
+                <div id="img-6" class="container-image toUp-6">
+                    <h1 class="title-img" id="title-img-6">Previsão do Tempo</h1>
+                    <div id="background-gradient-6" class="background-gradient"></div>
+                    <img class="" src="./assets/img-projects/previsao.png" alt="Previsao-do-tempo-project">
+                    <div id="button-6" class="button-image">
+                        <a href="https://previsaodotempo-io.netlify.app" target="_blank">Ver</a>
+                        <a href="https://github.com/DevGabriel0402/WeatherApp-io" target="_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-skills hidden" id="image-skills">
+                <div class="skill toUp-1">
+                    <img src="./assets/skills/html.svg" alt="html-skill">
+                    <div class="bar">
+                        <div class="progress-bar" data-width="80%">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill toUp-2">
+                    <img src="./assets/skills/css.svg" alt="css-skill">
+                    <div class="bar">
+                        <div class="progress-bar" data-width="80%">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill toUp-3">
+                    <img src="./assets/skills/js.svg" alt="js-skill">
+                    <div class="bar">
+                        <div class="progress-bar" data-width="60%">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill toUp-4">
+                    <img src="./assets/skills/react.svg" alt="react-skill">
+                    <div class="bar">
+                        <div class="progress-bar" data-width="25%">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill toUp-5">
+                    <img src="./assets/skills/figma.svg" alt="figma-skill">
+                    <div class="bar">
+                        <div class="progress-bar" data-width="48%">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill toUp-6">
+                    <img src="./assets/skills/github.svg" style="filter: invert(1)" alt="github-skill">
+                    <div class="bar">
+                        <div class="progress-bar" data-width="48%">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="toUp-6">© Gabriel Lucas. 2024 todos direitos reservados.</footer>
+</body>
+
+</html>
