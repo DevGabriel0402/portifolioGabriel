@@ -1,6 +1,6 @@
 # Portfólio - Gabriel Lucas
 
-<img src="./assets/readme-img/portifolio.png">
+<img src="./assets/readme-img/portifolio.webp">
 
 ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -10,7 +10,7 @@ Este é meu portfólio de desenvolvimento onde você encontrará minhas principa
 
 ## Como Acessar
 
-- **[Portfólio](https://example.com)**: Confira meus projetos.
+- **[Portfólio](eugabrieldev.netlify.app)**: Confira meus projetos.
 
 ## Projetos
 
